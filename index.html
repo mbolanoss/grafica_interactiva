@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Página Web</title>
     <link rel="stylesheet" href="estilos.css" />
-    <!-- Tipografía traída de Google Fonts -->
+    <!-- Tipografia de Google Fonts -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Nunito"
@@ -14,21 +14,48 @@
   <body>
     <header>
       <div id="titulo">
-        <h1>¡Bienvenido a Italia!</h1>
+        <h1 class="bold">¡Bienvenido a Italia!</h1>
+
         <h2>
           O como dicen allá:
-          <span>Benvenuto a Italia 🤌</span>
+          <span class="bold">Benvenuto a Italia 🤌</span>
         </h2>
       </div>
     </header>
     <nav>
       <ul>
-        <li><a class="boton-nav" href="pagina1.html">Inicio</a></li>
-        <li><a class="boton-nav" href="pagina2.html">Personajes</a></li>
-        <li><a class="boton-nav" href="pagina3.html">Actividades</a></li>
-        <li><a class="boton-nav" href="pagina4.html">Historia</a></li>
-        <li><a class="boton-nav" href="pagina5.html">Créditos</a></li>
+        <li><a class="boton-nav bold" href="pagina1.html">Inicio</a></li>
+        <li><a class="boton-nav bold" href="pagina2.html">Personajes</a></li>
+        <li><a class="boton-nav bold" href="pagina3.html">Actividades</a></li>
+        <li><a class="boton-nav bold" href="pagina4.html">Historia</a></li>
+        <li><a class="boton-nav bold" href="pagina5.html">Créditos</a></li>
       </ul>
     </nav>
+    <!-- Sección de informacion geográfica -->
+    <section>
+      <h3 class="titulo-seccion bold">Información general</h3>
+      <div id="info-general">
+        <ul id="lista-info-general">
+          <li class="item-lista-general">
+            <span class="bold">Cápital:</span> Roma
+          </li>
+          <li class="item-lista-general">
+            <span class="bold">Idioma oficial:</span> Italiano
+          </li>
+          <li class="item-lista-general">
+            <span class="bold">Gentilicio:</span> Italiano, -na
+          </li>
+          <li class="item-lista-general">
+            <span class="bold">Moneda:</span> Euro (€)
+          </li>
+          <li class="item-lista-general">
+            <span class="bold">Superficie:</span> 301.340 km <sup>2</sup>
+          </li>
+          <li class="item-lista-general">
+            <span class="bold">Huso horario:</span> CET +1
+          </li>
+        </ul>
+      </div>
+    </section>
   </body>
 </html>

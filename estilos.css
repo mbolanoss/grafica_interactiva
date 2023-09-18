@@ -6,6 +6,8 @@
   --azul-oscuro: #293241;
   --azul-claro: #98c1d9;
   --azul: #3d5a80;
+
+  font-size: 20px;
 }
 
 /* Estilos generales */
@@ -17,12 +19,36 @@ body {
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
+  font-weight: normal;
 }
 
 h2 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+h3 {
   font-size: 2rem;
   font-weight: normal;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+a {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.bolder {
+  font-weight: bolder;
 }
 
 /* Encabezado de las páginas */
@@ -47,12 +73,10 @@ header {
 }
 
 h2 span {
-  font-weight: bold;
   color: var(--marmol);
 }
 
 /* Barra de navegación */
-
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -74,9 +98,37 @@ nav ul li {
 .boton-nav {
   text-decoration: none;
   color: white;
-  font-weight: bold;
 }
 
 .boton-nav:hover {
   color: black;
+}
+
+/* Seccion de informacion general */
+section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#info-general {
+  background-color: var(--azul-claro);
+  padding: 1em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  border-radius: 20px;
+}
+
+#lista-info-general {
+  column-count: 2;
+  column-gap: 20em;
+}
+
+.titulo-seccion {
+  margin: 0.3em 0;
+}
+
+.item-lista-general {
 }
