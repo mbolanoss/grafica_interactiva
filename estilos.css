@@ -48,6 +48,10 @@ a {
   font-weight: normal;
 }
 
+section {
+  margin-bottom: 1rem;
+}
+
 .negrilla {
   font-weight: bold;
 }
@@ -128,7 +132,7 @@ section {
 
 #lista-info-general {
   column-count: 2;
-  column-gap: 20em;
+  column-gap: 7rem;
 }
 
 .titulo-seccion {
@@ -140,9 +144,8 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
   justify-items: center;
+  /* align-content: center; */
 }
 
 .item-info-ubicacion {
@@ -150,7 +153,34 @@ section {
   background-color: var(--azul-claro);
   border-radius: 10px;
   padding: 1rem;
-  margin: 1rem 0;
   width: 60%;
   height: fit-content;
+}
+
+/* Seccion de ciudades importantes */
+.ciudades {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-content: flex-start;
+}
+
+.tarjeta-ciudad {
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 0;
+  width: 80%;
+  height: fit-content;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.titulo-ciudad {
+  border-bottom: 3px solid grey;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.foto-ciudad {
+  margin: 10px 0;
 }
