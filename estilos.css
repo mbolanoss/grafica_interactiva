@@ -50,6 +50,9 @@ a {
 
 section {
   margin-bottom: 1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .negrilla {
@@ -114,12 +117,6 @@ nav ul li {
 }
 
 /* Seccion de informacion general */
-section {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
 #info-general {
   background-color: var(--azul-claro);
   padding: 1em 2em;
@@ -140,16 +137,25 @@ section {
 }
 
 /* Seccion de ubicacion geografica */
+#mapa-italia {
+  border-radius: 15px;
+  margin-bottom: 1.5rem;
+}
+
 .info-ubicacion {
+  background-color: var(--azul);
+  border-radius: 15px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  padding: 1.5rem 0;
   justify-items: center;
-  /* align-content: center; */
+  align-items: flex-end;
 }
 
 .item-info-ubicacion {
-  border: 5px solid var(--azul);
+  display: flex;
+  flex-direction: column;
   background-color: var(--azul-claro);
   border-radius: 10px;
   padding: 1rem;
