@@ -56,23 +56,27 @@ h2 span {
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
-  background-color: #333;
+  padding: 1.5em;
+  background-color: var(--azul-oscuro);
   text-align: center;
 }
 
 nav ul li {
+  /* No mostrarlos en vertical */
   display: inline;
-  margin-right: 20px;
+
+  margin-right: 3em;
+  padding: 0.8em;
+  background-color: var(--naranja);
+  border-radius: 0.7em;
 }
 
-nav ul li a {
+.boton-nav {
   text-decoration: none;
   color: white;
   font-weight: bold;
 }
 
-/* Estilos para los enlaces */
-nav ul li a:hover {
-  color: #ff9900;
+.boton-nav:hover {
+  color: black;
 }
