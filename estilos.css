@@ -1,0 +1,78 @@
+/* Variables */
+:root {
+  /* Colores */
+  --marmol: #e0fbfc;
+  --naranja: #ee6c4d;
+  --azul-oscuro: #293241;
+  --azul-claro: #98c1d9;
+  --azul: #3d5a80;
+}
+
+/* Estilos generales */
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--marmol);
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+/* Encabezado de las páginas */
+header {
+  background-image: url("imagenes/imagen_titulo.jpg");
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  height: 600px;
+  text-align: center;
+  padding: 20px;
+}
+
+#titulo {
+  margin: auto;
+  padding: 25px 50px;
+  background-color: var(--azul);
+  border-radius: 20px;
+  width: fit-content;
+}
+
+h2 span {
+  font-weight: bold;
+  color: var(--marmol);
+}
+
+/* Barra de navegación */
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Estilos para los enlaces */
+nav ul li a:hover {
+  color: #ff9900;
+}
