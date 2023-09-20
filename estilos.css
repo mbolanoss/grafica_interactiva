@@ -329,10 +329,17 @@ nav ul li {
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
-.botones-comida {
+#botones-comida {
+  margin: 1.5rem 0;
 }
 
 .boton-video {
+  background-color: var(--naranja);
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem;
+  margin: 0 1rem;
+  border-radius: 15px;
 }
 
 /* Seccion de deportes */
@@ -348,20 +355,20 @@ nav ul li {
   border-radius: 10px;
 }
 
-.deporte-horizontal {
+.deporte {
+  background-color: var(--azul-claro);
   display: flex;
-  flex-direction: row;
   align-items: center;
-  padding: 0 15rem;
+  padding: 1.5rem 15rem;
   margin: 2rem 0;
 }
 
+.deporte-horizontal {
+  flex-direction: row;
+}
+
 .deporte-vertical {
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 0 15rem;
-  margin: 2rem 0;
 }
 
 .foto-deporte {
@@ -371,14 +378,14 @@ nav ul li {
 
 .info-deporte-horizontal {
   margin-left: 2rem;
-  background-color: var(--azul-claro);
+  background-color: var(--marmol);
   padding: 1rem;
   border-radius: 10px;
 }
 
 .info-deporte-vertical {
   margin-top: 2rem;
-  background-color: var(--azul-claro);
+  background-color: var(--marmol);
   padding: 1rem;
   border-radius: 10px;
 }
