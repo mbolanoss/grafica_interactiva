@@ -74,15 +74,15 @@ header {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 1;
-  height: 600px;
+
+  height: 30rem;
   text-align: center;
-  padding: 20px;
+  padding: 1rem;
 }
 
 #titulo {
   margin: auto;
-  padding: 25px 50px;
+  padding: 0.5rem 1rem;
   background-color: var(--azul);
   border-radius: 20px;
   width: fit-content;
@@ -388,4 +388,40 @@ nav ul li {
   background-color: var(--marmol);
   padding: 1rem;
   border-radius: 10px;
+}
+
+/* Seccion de historia */
+#info-historia {
+  margin: 0 10rem;
+}
+
+#linea-tiempo {
+  margin-top: 1rem;
+}
+
+.item-linea {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.fecha {
+  padding: 1rem;
+  border: 5px solid var(--azul);
+  border-radius: 40px;
+}
+
+.conector-linea {
+  height: 5px;
+  background: var(--azul);
+  width: 4rem;
+}
+
+.descripcion-fecha {
+  padding: 1rem;
+  border: 5px solid var(--azul);
+  border-radius: 15px;
+  width: 27rem;
 }
