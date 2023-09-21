@@ -285,7 +285,7 @@ nav ul li {
   background-color: var(--azul);
   padding: 1rem;
   border-radius: 15px;
-  /* Animacion para que la sombra no se muestre instantaneamente */
+  /* Animacion para que se agrande al pasar el mouse encima */
   transition: transform 0.2s;
 }
 
@@ -395,6 +395,12 @@ nav ul li {
   margin: 0 10rem;
 }
 
+#foto-historia {
+  margin-top: 1rem;
+  width: 60%;
+  border-radius: 10px;
+}
+
 #linea-tiempo {
   margin-top: 1rem;
 }
@@ -404,19 +410,29 @@ nav ul li {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: var(--azul-claro);
+  padding: 1rem;
+  border-radius: 20px;
+  transition: transform 0.2s;
+}
+
+.item-linea:hover {
+  transform: scale(1.05);
+  border: 3px solid var(--azul);
 }
 
 .fecha {
   padding: 1rem;
-  border: 5px solid var(--azul);
+  background-color: var(--azul);
   border-radius: 40px;
 }
 
 .conector-linea {
-  height: 5px;
-  background: var(--azul);
+  border-bottom: 7px dotted var(--azul);
   width: 4rem;
+  margin: 0 0.4rem;
 }
 
 .descripcion-fecha {
@@ -424,4 +440,15 @@ nav ul li {
   border: 5px solid var(--azul);
   border-radius: 15px;
   width: 27rem;
+  background-color: var(--marmol);
+}
+
+.divisor-linea {
+  margin: auto;
+  height: 7px;
+  background: var(--naranja);
+  width: 3rem;
+  border-radius: 20px;
+  /* Se rota para que quede en vertical */
+  transform: rotate(90deg);
 }
