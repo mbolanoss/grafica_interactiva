@@ -458,3 +458,9 @@ nav ul li {
   /* Se rota para que quede en vertical */
   transform: rotate(90deg);
 }
+
+/* Seccion de creditos */
+.lista-creditos {
+  column-count: 3;
+  column-gap: 4rem;
+}
