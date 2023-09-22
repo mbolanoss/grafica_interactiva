@@ -36,9 +36,27 @@
       </ul>
     </nav>
     <div id="cuerpo-informacion">
+      <!-- Navegacion interna -->
+      <section>
+        <h3 class="titulo-seccion negrilla">Secciones</h3>
+        <div class="nav-interna">
+          <ol>
+            <li>
+              <a rel="noopener" target="_self" href="#seccion1">Introducción</a>
+            </li>
+            <li>
+              <a rel="noopener" target="_self" href="#seccion2"
+                >Línea de tiempo</a
+              >
+            </li>
+          </ol>
+        </div>
+      </section>
       <!-- Sección de historia -->
       <section>
-        <h3 class="titulo-seccion negrilla">Historia de Italia</h3>
+        <h3 class="titulo-seccion negrilla" id="seccion1">
+          Historia de Italia
+        </h3>
         <p id="info-historia">
           La historia de Italia es un fascinante viaje a través de milenios de
           cultura, política y cambios significativos. Desde sus humildes inicios
@@ -59,8 +77,8 @@
           src="imagenes/historia.jpg"
           alt="Foto de ciudad antigua italiana"
         />
-        <div id="linea-tiempo">
-          <div class="item-linea">
+        <div>
+          <div class="item-linea" id="seccion2">
             <h4 class="fecha negrilla letra-blanca">
               Siglo VIII a.C. - Siglo III a.C
             </h4>

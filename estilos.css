@@ -67,6 +67,12 @@ section {
   margin: 0 9rem 3rem 9rem;
 }
 
+.nav-interna {
+  border: 7px dotted var(--azul);
+  border-radius: 15px;
+  padding: 1rem;
+}
+
 /* Encabezado de las páginas */
 header {
   background-image: url("imagenes/imagen_titulo.jpg");
