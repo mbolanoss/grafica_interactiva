@@ -272,11 +272,18 @@ nav ul li {
   margin-bottom: 1rem;
 }
 
+.info-foto-personaje {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .info-personaje {
   margin-top: 1rem;
   background-color: var(--marmol);
   padding: 0.5rem;
   border-radius: 10px;
+  text-align: center;
 }
 
 /* Seccion de celebridades */
@@ -574,5 +581,50 @@ nav ul li {
 
   .foto-ciudad {
     width: 100%;
+  }
+
+  /* Seccion de poblacion */
+  #foto-gente {
+    margin-right: 1rem;
+    width: 50%;
+  }
+
+  #texto-poblacion {
+    width: 50%;
+  }
+
+  .item-texto-poblacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .divisor-poblacion {
+    margin: 0.5rem 0;
+  }
+
+  /* Seccion de personajes historicos */
+  #lista-personajes {
+    flex-direction: column;
+  }
+
+  .personaje {
+    flex-direction: row;
+  }
+
+  .foto-personaje {
+    margin-bottom: 0.5rem;
+  }
+
+  .info-personaje {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+
+  /* Seccion de celebridades */
+  #lista-celebridades {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
   }
 }
