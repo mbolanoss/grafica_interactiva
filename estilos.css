@@ -401,6 +401,9 @@ nav ul li {
 }
 
 .info-deporte-horizontal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-left: 2rem;
   background-color: var(--marmol);
   padding: 1rem;
@@ -408,6 +411,9 @@ nav ul li {
 }
 
 .info-deporte-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 2rem;
   background-color: var(--marmol);
   padding: 1rem;
@@ -626,5 +632,47 @@ nav ul li {
     display: flex;
     flex-direction: column;
     margin: 0 2rem;
+  }
+
+  /* Seccion de gastronomia */
+  #info-gastronomia {
+    padding: 0;
+    text-align: justify;
+  }
+
+  #platos-tipicos {
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem;
+    margin: 1rem;
+  }
+
+  #botones-comida {
+    margin: 1.5rem 0;
+  }
+
+  #intro-botones-youtube {
+    text-align: center;
+  }
+
+  .boton-video {
+    margin: 0 0.5rem;
+  }
+
+  /* Seccion de deportes */
+  #intro-deportes {
+    margin: 0rem 1rem;
+  }
+
+  .deporte {
+    padding: 1.5rem 1rem;
+    margin: 1rem 0;
+  }
+
+  .info-deporte-horizontal {
+    margin-left: 1rem;
+  }
+
+  .info-deporte-vertical {
+    margin-top: 1rem;
   }
 }
