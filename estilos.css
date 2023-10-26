@@ -122,7 +122,8 @@ nav ul li {
   color: white;
 }
 
-.boton-nav:hover {
+.boton-nav:hover,
+.boton-nav-seleccinado {
   color: black;
 }
 
