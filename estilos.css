@@ -99,11 +99,14 @@ h2 span {
 }
 
 /* Barra de navegación */
+nav {
+  background-color: var(--azul-oscuro);
+}
+
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 1.5em;
-  background-color: var(--azul-oscuro);
   text-align: center;
 }
 
@@ -127,6 +130,10 @@ nav ul li {
   color: black;
 }
 
+#menu-desplegable {
+  display: none;
+}
+
 /* Seccion de informacion general */
 #info-general {
   background-color: var(--azul-claro);
@@ -145,12 +152,14 @@ nav ul li {
 
 .titulo-seccion {
   margin: 0.3em 0;
+  text-align: center;
 }
 
 /* Seccion de ubicacion geografica */
 #mapa-italia {
   border-radius: 15px;
   margin-bottom: 1.5rem;
+  width: 60%;
 }
 
 .info-ubicacion {
@@ -201,6 +210,7 @@ nav ul li {
 .foto-ciudad {
   margin: 10px 0;
   border-radius: 10px;
+  width: 100%;
 }
 
 /* Seccion de poblacion */
@@ -464,4 +474,105 @@ nav ul li {
 .lista-creditos {
   column-count: 3;
   column-gap: 4rem;
+}
+
+/* RWD */
+
+/* Pantalla: telefono celular */
+@media only screen and (max-width: 800px) {
+  #cuerpo-informacion {
+    margin: 0 3rem 3rem 3rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  /* Barra de navegacion */
+  nav {
+    background-color: var(--marmol);
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  #titulo-menu {
+    margin-left: 10px;
+  }
+
+  #menu-desplegable {
+    display: block;
+  }
+
+  #contenido-menu-desplegable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--naranja);
+    padding: 0.5rem;
+  }
+
+  #lista-menu-desplegable {
+    display: none;
+  }
+
+  #menu-desplegable:hover #lista-menu-desplegable {
+    background-color: var(--naranja);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  /* Seccion de informacion general */
+  #info-general {
+    padding: 0.5rem;
+    width: 80%;
+  }
+
+  #lista-info-general {
+    column-count: 2;
+    column-gap: 1rem;
+  }
+
+  /* Seccion de ubicacion geografica */
+  #mapa-italia {
+    width: 100%;
+  }
+
+  .info-ubicacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item-info-ubicacion {
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 80%;
+  }
+
+  /* Seccion de ciudades importantes */
+  .ciudades {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tarjeta-ciudad {
+    width: 90%;
+  }
+
+  .foto-ciudad {
+    width: 100%;
+  }
 }
