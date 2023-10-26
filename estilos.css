@@ -710,3 +710,210 @@ nav ul li {
     column-gap: 4rem;
   }
 }
+
+/* Pantalla: telefono celular */
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  #cuerpo-informacion {
+    margin: 0 3rem 3rem 3rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  /* Barra de navegacion */
+  nav {
+    background-color: var(--marmol);
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  #titulo-menu {
+    margin-left: 10px;
+  }
+
+  #menu-desplegable {
+    display: block;
+  }
+
+  #contenido-menu-desplegable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--naranja);
+    padding: 0.5rem;
+  }
+
+  #lista-menu-desplegable {
+    display: none;
+  }
+
+  #menu-desplegable:hover #lista-menu-desplegable {
+    background-color: var(--naranja);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  /* Seccion de informacion general */
+  #info-general {
+    padding: 0.5rem;
+    width: 50%;
+  }
+
+  #lista-info-general {
+    column-count: 2;
+    column-gap: 1rem;
+  }
+
+  /* Seccion de ubicacion geografica */
+  #mapa-italia {
+    width: 100%;
+  }
+
+  .info-ubicacion {
+    padding-top: 2.5rem;
+    align-items: center;
+  }
+
+  .item-info-ubicacion {
+    width: 80%;
+  }
+
+  /* Seccion de ciudades importantes */
+  .ciudades {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .tarjeta-ciudad {
+    width: 85%;
+  }
+
+  /* Seccion de poblacion */
+  #foto-gente {
+    margin-right: 1rem;
+    width: 50%;
+  }
+
+  #texto-poblacion {
+    width: 50%;
+  }
+
+  .item-texto-poblacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .divisor-poblacion {
+    margin: 0.5rem 0;
+  }
+
+  /* Seccion de personajes historicos */
+  #lista-personajes {
+    flex-direction: column;
+  }
+
+  .personaje {
+    flex-direction: row;
+  }
+
+  .foto-personaje {
+    margin-bottom: 0.5rem;
+  }
+
+  .info-personaje {
+    margin-top: 0;
+    margin-left: 1rem;
+  }
+
+  /* Seccion de celebridades */
+  #lista-celebridades {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+  }
+
+  /* Seccion de gastronomia */
+  #info-gastronomia {
+    padding: 0;
+    text-align: justify;
+  }
+
+  #platos-tipicos {
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem;
+    margin: 1rem;
+  }
+
+  #botones-comida {
+    margin: 1.5rem 0;
+  }
+
+  #intro-botones-youtube {
+    text-align: center;
+  }
+
+  .boton-video {
+    margin: 0 0.5rem;
+  }
+
+  /* Seccion de deportes */
+  #intro-deportes {
+    margin: 0rem 1rem;
+  }
+
+  .deporte {
+    padding: 1.5rem 1rem;
+    margin: 1rem 0;
+  }
+
+  .info-deporte-horizontal {
+    margin-left: 1rem;
+  }
+
+  .info-deporte-vertical {
+    margin-top: 1rem;
+  }
+
+  /* Seccion de historia */
+  #info-historia {
+    margin: 0 1rem;
+  }
+
+  #foto-historia {
+    width: 90%;
+  }
+
+  #linea-tiempo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item-linea {
+    margin: 2rem 0;
+  }
+
+  .fecha {
+    text-align: center;
+  }
+
+  .descripcion-fecha {
+    width: 70%;
+  }
+
+  /* Seccion de creditos */
+  .lista-creditos {
+    column-count: 3;
+    column-gap: 4rem;
+  }
+}
