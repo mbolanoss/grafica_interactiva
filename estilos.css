@@ -423,6 +423,7 @@ nav ul li {
 /* Seccion de historia */
 #info-historia {
   margin: 0 10rem;
+  text-align: justify;
 }
 
 #foto-historia {
@@ -674,5 +675,38 @@ nav ul li {
 
   .info-deporte-vertical {
     margin-top: 1rem;
+  }
+
+  /* Seccion de historia */
+  #info-historia {
+    margin: 0 1rem;
+  }
+
+  #foto-historia {
+    width: 90%;
+  }
+
+  #linea-tiempo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item-linea {
+    margin: 2rem 0;
+  }
+
+  .fecha {
+    text-align: center;
+  }
+
+  .descripcion-fecha {
+    width: 70%;
+  }
+
+  /* Seccion de creditos */
+  .lista-creditos {
+    column-count: 3;
+    column-gap: 4rem;
   }
 }
