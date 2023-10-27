@@ -64,7 +64,7 @@ section {
 }
 
 #cuerpo-informacion {
-  margin: 0 9rem 3rem 9rem;
+  margin: 0 6rem 3rem 6rem;
 }
 
 .nav-interna {
@@ -137,7 +137,7 @@ nav ul li {
 /* Seccion de informacion general */
 #info-general {
   background-color: var(--azul-claro);
-  padding: 1em 2em;
+  padding-right: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -147,7 +147,7 @@ nav ul li {
 
 #lista-info-general {
   column-count: 2;
-  column-gap: 7rem;
+  column-gap: 4rem;
 }
 
 .titulo-seccion {
@@ -159,7 +159,7 @@ nav ul li {
 #mapa-italia {
   border-radius: 15px;
   margin-bottom: 1.5rem;
-  width: 60%;
+  width: 80%;
 }
 
 .info-ubicacion {
@@ -171,6 +171,7 @@ nav ul li {
   padding: 1.5rem 0;
   justify-items: center;
   align-items: flex-end;
+  margin: 0 4rem;
 }
 
 .item-info-ubicacion {
