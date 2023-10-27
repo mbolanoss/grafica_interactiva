@@ -798,6 +798,7 @@ nav ul li {
   }
 
   /* Seccion de poblacion */
+
   #foto-gente {
     margin-right: 1rem;
     width: 50%;
@@ -813,25 +814,25 @@ nav ul li {
     align-items: center;
   }
 
-  .divisor-poblacion {
-    margin: 0.5rem 0;
-  }
-
   /* Seccion de personajes historicos */
+
   #lista-personajes {
     flex-direction: column;
+    margin: 0 6rem;
   }
 
   .personaje {
     flex-direction: row;
+    align-items: center;
   }
 
   .foto-personaje {
+    min-width: 70%;
     margin-bottom: 0.5rem;
   }
 
   .info-personaje {
-    margin-top: 0;
+    margin-top: 0rem;
     margin-left: 1rem;
   }
 
@@ -839,7 +840,11 @@ nav ul li {
   #lista-celebridades {
     display: flex;
     flex-direction: column;
-    margin: 0 2rem;
+    margin: 0 3rem;
+  }
+
+  .foto-celebridad {
+    min-width: 35%;
   }
 
   /* Seccion de gastronomia */
