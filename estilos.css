@@ -493,6 +493,11 @@ nav ul li {
   column-gap: 4rem;
 }
 
+#mapa-navegacion {
+  width: 90%;
+  margin: 0.5rem 0;
+}
+
 /* RWD */
 
 /* Pantalla: telefono celular */
@@ -722,8 +727,13 @@ nav ul li {
 
   /* Seccion de creditos */
   .lista-creditos {
-    column-count: 3;
-    column-gap: 4rem;
+    column-count: 2;
+    column-gap: 2rem;
+  }
+
+  #mapa-navegacion {
+    width: 100%;
+    margin: 0;
   }
 }
 
@@ -931,5 +941,16 @@ nav ul li {
 
   .descripcion-fecha {
     width: 80%;
+  }
+
+  /* Seccion de creditos */
+  .lista-creditos {
+    column-count: 3;
+    column-gap: 2rem;
+  }
+
+  #mapa-navegacion {
+    width: 100%;
+    margin: 0.5rem 0;
   }
 }
