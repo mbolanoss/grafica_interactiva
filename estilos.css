@@ -277,6 +277,7 @@ nav ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .info-personaje {
@@ -291,9 +292,9 @@ nav ul li {
 
 #lista-celebridades {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 3rem;
   grid-row-gap: 1rem;
 }
 
@@ -592,13 +593,20 @@ nav ul li {
   }
 
   /* Seccion de poblacion */
+  #info-poblacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   #foto-gente {
-    margin-right: 1rem;
+    margin: 0;
     width: 50%;
   }
 
   #texto-poblacion {
-    width: 50%;
+    margin-top: 1rem;
+    width: 80%;
   }
 
   .item-texto-poblacion {
