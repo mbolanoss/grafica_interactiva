@@ -15,7 +15,6 @@
       src="https://kit.fontawesome.com/594a7b1c9f.js"
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="index.js"></script>
   </head>
   <body>
     <header>
@@ -70,11 +69,98 @@
       </div>
     </nav>
     <div id="cuerpo-informacion">
-      <object
-        id="svg"
-        data="imagenes/mapa_interactivo.svg"
-        type="image/svg+xml"
-      ></object>
+      <section>
+        <h2 class="negrilla">Mapa interactivo</h2>
+        <object
+          id="svg"
+          data="imagenes/mapa_interactivo.svg"
+          type="image/svg+xml"
+        ></object>
+        <div class="info-mapa info-oculta" id="info-lago">
+          <h3>Lago de Como</h3>
+          <img
+            class="foto-mapa"
+            src="imagenes/lago_como.jpg"
+            alt="Foto del lago de Como"
+          />
+          <p>
+            El Lago de Como, situado en la región de Lombardía al norte de
+            Italia, es famoso por su belleza serena y sus paisajes
+            impresionantes. Rodeado por majestuosas montañas, el lago es
+            conocido por sus encantadoras villas, jardines exuberantes y pueblos
+            pintorescos a lo largo de sus orillas, como Bellagio, Varenna y
+            Menaggio. Muchas de estas villas históricas cuentan con jardines
+            exquisitos y arquitectura elegante.
+          </p>
+          <button class="boton-mapa" id="boton-lago" onclick="ocultarLago()">
+            Volver
+          </button>
+        </div>
+        <div class="info-mapa info-oculta" id="info-torre">
+          <h3>Torre de Pisa</h3>
+          <img
+            class="foto-mapa"
+            src="imagenes/torre_pisa.jpg"
+            alt="Foto de la torre de Pisa"
+          />
+          <p>
+            La Torre de Pisa es famosa por su inclinación distintiva, resultado
+            de problemas de cimentación durante su construcción en el siglo XII.
+            Situada en la Piazza dei Miracoli de Pisa, junto a la catedral y el
+            baptisterio, la torre es parte de un conjunto arquitectónico
+            impresionante. Los visitantes pueden subir los escalones de la torre
+            para disfrutar de vistas panorámicas de la ciudad.
+          </p>
+          <button class="boton-mapa" id="boton-torre" onclick="ocultarTorre()">
+            Volver
+          </button>
+        </div>
+        <div class="info-mapa info-oculta" id="info-galeria">
+          <h3>Galería Uffizi</h3>
+          <img
+            class="foto-mapa"
+            src="imagenes/galeria_uffizi.jpg"
+            alt="Foto de la galería Uffizi"
+          />
+          <p>
+            La Galería Uffizi es uno de los museos de arte más importantes del
+            mundo y se encuentra en Florencia. Construida en el siglo XVI, la
+            galería alberga una impresionante colección de obras maestras
+            renacentistas, incluyendo pinturas de artistas como Botticelli,
+            Leonardo da Vinci, Miguel Ángel y Rafael. Los visitantes pueden
+            maravillarse ante la belleza de estas obras maestras en un entorno
+            arquitectónico histórico.
+          </p>
+          <button
+            class="boton-mapa"
+            id="boton-galeria"
+            onclick="ocultarGaleria()"
+          >
+            Volver
+          </button>
+        </div>
+        <div class="info-mapa info-oculta" id="info-costa">
+          <h3>Costa Amalfitana</h3>
+          <img
+            class="foto-mapa"
+            src="imagenes/costa_amalfitana.jpg"
+            alt="Foto de la costa Amalfitana"
+          />
+          <p>
+            La Costa Amalfitana, situada en la región de Campania, es una joya
+            costera que abarca varias pintorescas ciudades y pueblos, incluyendo
+            Positano, Amalfi y Ravello. Con sus acantilados impresionantes,
+            aguas cristalinas del Mar Tirreno y coloridas casas en la ladera, la
+            costa ofrece paisajes espectaculares. Además de su belleza natural,
+            la región es conocida por su deliciosa gastronomía y su encanto
+            mediterráneo.
+          </p>
+          <button class="boton-mapa" id="boton-costa" onclick="ocultarCosta()">
+            Volver
+          </button>
+        </div>
+      </section>
     </div>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
