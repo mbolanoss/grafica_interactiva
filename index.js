@@ -84,9 +84,11 @@ function ocultarCosta() {
   infoCosta.classList.add("info-oculta");
 }
 
+// Se espera a que el DOM cargue totalmente
 document.addEventListener("DOMContentLoaded", (event) => {
   let svgObject = document.getElementById("svg");
 
+  // Se espera a que el archivo svg se cargue para poder hacerlo interactivo
   svgObject.onload = () => {
     let svg = svgObject.contentDocument;
 
