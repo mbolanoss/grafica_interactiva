@@ -1,6 +1,6 @@
-function gestionarLago(svg) {
+function gestionarLago() {
   // Se busca el icono de GPS del Lago de Como
-  let iconoLago = svg.getElementById("icono-lago");
+  let iconoLago = document.getElementById("icono-lago");
 
   // Se añade un listener para cuando se clickee
   iconoLago.addEventListener("click", () => {
@@ -14,8 +14,8 @@ function gestionarLago(svg) {
   iconoLago.style.cursor = "pointer";
 }
 
-function gestionarTorre(svg) {
-  let iconoTorre = svg.getElementById("icono-torre-pisa");
+function gestionarTorre() {
+  let iconoTorre = document.getElementById("icono-torre-pisa");
 
   // Se añade un listener para cuando se clickee
   iconoTorre.addEventListener("click", () => {
@@ -29,8 +29,8 @@ function gestionarTorre(svg) {
   iconoTorre.style.cursor = "pointer";
 }
 
-function gestionarGaleria(svg) {
-  let iconoGaleria = svg.getElementById("icono-galeria");
+function gestionarGaleria() {
+  let iconoGaleria = document.getElementById("icono-galeria");
 
   // Se añade un listener para cuando se clickee
   iconoGaleria.addEventListener("click", () => {
@@ -44,8 +44,8 @@ function gestionarGaleria(svg) {
   iconoGaleria.style.cursor = "pointer";
 }
 
-function gestionarCosta(svg) {
-  let iconoCosta = svg.getElementById("icono-costa");
+function gestionarCosta() {
+  let iconoCosta = document.getElementById("icono-costa");
 
   // Se añade un listener para cuando se clickee
   iconoCosta.addEventListener("click", () => {
@@ -84,17 +84,7 @@ function ocultarCosta() {
   infoCosta.classList.add("info-oculta");
 }
 
-// Se espera a que el DOM cargue totalmente
-document.addEventListener("DOMContentLoaded", (event) => {
-  let svgObject = document.getElementById("svg");
-
-  // Se espera a que el archivo svg se cargue para poder hacerlo interactivo
-  svgObject.onload = () => {
-    let svg = svgObject.contentDocument;
-
-    gestionarLago(svg);
-    gestionarTorre(svg);
-    gestionarGaleria(svg);
-    gestionarCosta(svg);
-  };
-});
+gestionarLago();
+gestionarTorre();
+gestionarGaleria();
+gestionarCosta();
